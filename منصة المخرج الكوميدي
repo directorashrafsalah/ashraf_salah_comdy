@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>منصة المخرج الكوميدي أشرف صلاح</title>
+<meta name="description" content="منصة كوميدية تجمع الأفلام القصيرة والبرامج والاسكتشات الكوميدية للمخرج أشرف صلاح.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <img src="assets/ashraf-salah-logo.png" alt="المخرج الكوميدي أشرف صلاح">
+    <div><strong>المخرج الكوميدي أشرف صلاح</strong><span>كل ما هو كوميدي في مكان واحد</span></div>
+  </div>
+  <nav>
+    <a href="#home">الرئيسية</a><a href="#films">الأفلام</a><a href="#programs">البرامج</a>
+    <a href="#sketches">الاسكتشات</a><a href="#exclusive">حصري</a>
+  </nav>
+  <button class="subscribe" onclick="showSubscription()">اشترك الآن 👑</button>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">😂 منصة كوميدية متخصصة</span>
+    <h1>اضحك من قلبك<br><em>مع أشرف صلاح</em></h1>
+    <p>أفلام كوميدية قصيرة • برامج كوميدية • اسكتشات • كواليس ومواقف مضحكة</p>
+    <div class="actions"><button class="primary" onclick="showSubscription()">اشترك في المنصة</button><a class="secondary" href="#sketches">شاهد الاسكتشات</a></div>
+    <p class="tagline">"هدفي رسم البسمة على كل إنسان ❤️"</p>
+  </div>
+  <div class="hero-art"><img src="assets/ashraf-salah-logo.png" alt="أشرف صلاح"></div>
+</section>
+
+<section class="categories">
+  <button class="cat active" data-filter="all">😂 الكل</button>
+  <button class="cat" data-filter="sketch">🎭 اسكتشات</button>
+  <button class="cat" data-filter="program">📺 برامج</button>
+  <button class="cat" data-filter="film">🎬 أفلام قصيرة</button>
+  <button class="cat" data-filter="exclusive">👑 حصري للمشتركين</button>
+</section>
+
+<section id="sketches" class="section">
+  <div class="section-head"><div><h2>الاسكتشات الكوميدية</h2><p>مواقف سريعة للضحك من القلب</p></div><button class="ghost">عرض الكل</button></div>
+  <div class="grid" id="contentGrid">
+    <article class="card" data-type="sketch"><div class="thumb t1">😂</div><h3>الموقف اللي قلب جد</h3><span>اسكتش كوميدي • 03:15</span><button onclick="watch('الموقف اللي قلب جد')">▶ مشاهدة</button></article>
+    <article class="card" data-type="sketch"><div class="thumb t2">🤣</div><h3>حياتي نمرة واحد</h3><span>اسكتش كوميدي • 03:02</span><button onclick="watch('حياتي نمرة واحد')">▶ مشاهدة</button></article>
+    <article class="card" data-type="sketch"><div class="thumb t3">😎</div><h3>كلام من ذهب</h3><span>اسكتش كوميدي • 02:58</span><button onclick="watch('كلام من ذهب')">▶ مشاهدة</button></article>
+    <article class="card" data-type="program"><div class="thumb t4">📺</div><h3>الضحكة الحلوة</h3><span>برنامج كوميدي • 15 حلقة</span><button onclick="watch('الضحكة الحلوة')">▶ مشاهدة</button></article>
+    <article class="card" data-type="program"><div class="thumb t5">🏆</div><h3>نجم الحلقة</h3><span>برنامج مسابقات كوميدي</span><button onclick="watch('نجم الحلقة')">▶ مشاهدة</button></article>
+    <article class="card" data-type="film"><div class="thumb t6">🎬</div><h3>فيلم: ضحكة في آخر الليل</h3><span>فيلم كوميدي قصير • 18 دقيقة</span><button onclick="watch('ضحكة في آخر الليل')">▶ مشاهدة</button></article>
+    <article class="card" data-type="exclusive"><div class="thumb t7">👑</div><h3>خلف الكاميرا</h3><span>محتوى حصري للمشتركين</span><button onclick="showSubscription()">🔒 اشترك للمشاهدة</button></article>
+    <article class="card" data-type="exclusive"><div class="thumb t8">😂</div><h3>كواليس لا تراها على TikTok</h3><span>حصري • جديد كل أسبوع</span><button onclick="showSubscription()">🔒 اشترك للمشاهدة</button></article>
+  </div>
+</section>
+
+<section id="films" class="strip"><h2>🎬 الأفلام الكوميدية القصيرة</h2><p>مكان جاهز لإضافة 5 أفلامك عند إطلاق المنصة.</p><div class="empty">+ أضف الفيلم الأول هنا</div></section>
+<section id="programs" class="strip"><h2>📺 البرامج الكوميدية</h2><p>مكان جاهز لإضافة 15 برنامجًا وحلقاتها.</p><div class="empty">+ أضف البرنامج الأول هنا</div></section>
+
+<section id="exclusive" class="membership">
+  <div><span class="eyebrow">👑 للمشتركين فقط</span><h2>ضحك أكتر… محتوى حصري أكتر</h2><p>أفلام وبرامج واسكتشات إضافية، كواليس وبث مباشر، بعيدًا عن الإعلانات.</p></div>
+  <div class="price"><small>الباقة الشهرية</small><strong>20 <b>جنيه</b></strong><button onclick="showSubscription()">اشترك الآن</button></div>
+  <div class="price annual"><small>الباقة السنوية</small><strong>200 <b>جنيه</b></strong><button onclick="showSubscription()">وفر واشترك</button></div>
+</section>
+</main>
+
+<footer><strong>المخرج الكوميدي أشرف صلاح</strong><span>كل ما هو كوميدي في مكان واحد ❤️</span><span>نسخة تجريبية أولى — 2026</span></footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-box"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+منصة المخرج الكوميدي أشرف صلاح — نسخة تجريبية مجانية
+1) افتح index.html في المتصفح.
+2) ضع صور البوسترات والفيديوهات داخل assets لاحقًا.
+3) يمكن استبدال كروت المحتوى الوهمية ببيانات الأفلام والبرامج الحقيقية.
+4) ربط الاشتراك والدفع والاستضافة يتم في المرحلة التالية.
+
+const modal=document.getElementById('modal'), modalContent=document.getElementById('modalContent');
+function showSubscription(){modalContent.innerHTML=`<h2>👑 اشترك في منصة أشرف صلاح</h2><p>ابدأ بالباقة الشهرية وشاهد المحتوى الكوميدي الحصري.</p><div style="font-size:34px;color:#f2bd38;font-weight:800">20 جنيه / شهر</div><button class="primary" onclick="alert('هذه نسخة تجريبية — سيتم ربط الدفع في المرحلة التالية');closeModal()">متابعة الاشتراك</button>`;modal.classList.add('show');}
+function watch(title){modalContent.innerHTML=`<h2>🎬 ${title}</h2><p>هذه مساحة تشغيل الفيديو. عند رفع أفلامك وبرامجك سنضع رابط الفيديو أو ملف المشاهدة هنا.</p><button class="primary" onclick="closeModal()">رجوع</button>`;modal.classList.add('show');}
+function closeModal(){modal.classList.remove('show')}
+document.querySelectorAll('.cat').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.cat').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.card').forEach(c=>c.style.display=(f==='all'||c.dataset.type===f)?'block':'none')}));
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#080808;color:#fff;font-family:Cairo,Arial,sans-serif}.topbar{height:78px;display:flex;align-items:center;gap:28px;padding:8px 4%;background:rgba(5,5,5,.96);border-bottom:1px solid #29200c;position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:10px;margin-left:auto}.brand img{width:54px;height:54px;object-fit:cover;border-radius:50%;border:1px solid #d9a82e}.brand strong{display:block;color:#f0c24b;font-size:15px}.brand span{display:block;color:#aaa;font-size:11px}nav{display:flex;gap:24px;margin:auto}nav a{color:#ddd;text-decoration:none;font-size:13px}nav a:hover{color:#f2bd38}.subscribe,.primary{background:linear-gradient(135deg,#ffd76a,#b97808);border:0;color:#171107;font-weight:800;border-radius:10px;padding:13px 22px;cursor:pointer}.hero{min-height:560px;display:grid;grid-template-columns:1fr 1.15fr;align-items:center;overflow:hidden;background:radial-gradient(circle at 70% 45%,#3b2608 0,#0a0805 45%,#050505 80%)}.hero-copy{padding:70px 8% 70px 4%}.eyebrow{color:#f2bd38;font-weight:700}.hero h1{font-size:clamp(42px,6vw,78px);line-height:1.1;margin:16px 0}.hero h1 em{color:#e8b638;font-style:normal}.hero p{color:#ddd;font-size:18px;max-width:650px}.actions{display:flex;gap:12px;margin:28px 0}.secondary,.ghost{display:inline-block;padding:12px 20px;border:1px solid #8c6518;color:#f0c24b;border-radius:10px;text-decoration:none;background:#101010}.tagline{color:#f0c24b!important}.hero-art{height:100%;display:flex;align-items:center;justify-content:center}.hero-art img{width:min(100%,700px);max-height:530px;object-fit:contain;filter:drop-shadow(0 0 30px rgba(222,163,43,.2))}.categories{display:flex;gap:10px;padding:22px 5%;overflow:auto;background:#0b0b0b;border-bottom:1px solid #251b09}.cat{white-space:nowrap;background:#141414;border:1px solid #35280f;color:#ddd;padding:11px 18px;border-radius:25px;cursor:pointer}.cat.active,.cat:hover{background:#d49a22;color:#111}.section{padding:45px 5%}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}.section h2,.strip h2{margin:0;color:#f0c24b}.section-head p,.strip p{color:#999}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#111;border:1px solid #31250f;border-radius:14px;padding:9px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#b98720}.thumb{height:170px;border-radius:10px;display:grid;place-items:center;font-size:70px;background:linear-gradient(135deg,#291d0c,#151515)}.t2{background:linear-gradient(135deg,#172333,#151515)}.t3{background:linear-gradient(135deg,#39210a,#151515)}.t4{background:linear-gradient(135deg,#24150a,#151515)}.t5{background:linear-gradient(135deg,#182a26,#151515)}.t6{background:linear-gradient(135deg,#2b1515,#151515)}.t7{background:linear-gradient(135deg,#5b410f,#151515)}.t8{background:linear-gradient(135deg,#25132e,#151515)}.card h3{margin:12px 4px 4px;font-size:16px}.card span{color:#999;font-size:12px}.card button{width:100%;margin-top:12px;padding:9px;background:#181818;border:1px solid #87621a;color:#f2bd38;border-radius:8px;cursor:pointer}.strip{padding:35px 5%;border-top:1px solid #171717}.empty{height:100px;border:1px dashed #624917;border-radius:12px;display:grid;place-items:center;color:#b98a28}.membership{margin:25px 5% 60px;padding:30px;border:1px solid #604515;border-radius:18px;background:linear-gradient(90deg,#171006,#0d0d0d);display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:18px;align-items:center}.membership h2{font-size:30px;margin:8px 0;color:#f0c24b}.membership p{color:#bbb}.price{padding:22px;text-align:center;border:1px solid #4d3a16;border-radius:14px}.price small{color:#aaa}.price strong{display:block;font-size:38px;color:#f2bd38}.price b{font-size:14px}.price button{width:100%;padding:11px;border:0;border-radius:8px;background:#d49a22;font-weight:800;cursor:pointer}.annual{background:#17120a}footer{padding:30px 5%;border-top:1px solid #251b09;display:flex;justify-content:space-between;color:#aaa}footer strong{color:#f0c24b}.modal{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;place-items:center;z-index:30}.modal.show{display:grid}.modal-box{width:min(520px,90%);background:#111;border:1px solid #9b711e;border-radius:18px;padding:30px;position:relative;text-align:center}.close{position:absolute;left:15px;top:10px;background:none;border:0;color:#fff;font-size:30px;cursor:pointer}.modal-box h2{color:#f0c24b}.modal-box .primary{margin-top:12px}@media(max-width:900px){nav{display:none}.hero{grid-template-columns:1fr}.hero-copy{padding:50px 7% 20px}.hero-art{order:-1}.grid{grid-template-columns:repeat(2,1fr)}.membership{grid-template-columns:1fr 1fr}.membership>div:first-child{grid-column:1/-1}}@media(max-width:560px){.topbar{height:65px}.brand span{display:none}.brand strong{font-size:12px}.subscribe{padding:9px 12px}.grid{grid-template-columns:1fr}.membership{grid-template-columns:1fr}.hero h1{font-size:43px}.hero p{font-size:15px}footer{flex-direction:column;gap:8px}}
